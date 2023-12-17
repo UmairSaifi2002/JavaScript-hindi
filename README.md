@@ -1,2 +1,3 @@
 # JavaScript-hindi
-This is my firat repository
+This is my first repository
+and now nobody stop me.
