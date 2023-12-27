@@ -5,7 +5,7 @@ because the issue in block scope and the functional scope
 const account_Id = 144553
 let account_Email = "abc@gmail.com" // this is a variable
 var accountPassword = "12345678" // this is a variable
-accountCity = "Jaipur" // this is a bad method to define the variable
+accountCity = "Jaipur" // this is a worst method to define the variable
 let accountState
 
 // account_Id = 12 //it is not Allowed.
