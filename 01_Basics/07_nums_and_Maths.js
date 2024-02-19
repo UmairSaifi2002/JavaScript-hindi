@@ -39,4 +39,4 @@ const hundered = 1000000
 // formula for random number between min_val and max_val
 // we can use both Math.floor() & Math.ceil() 
 //-> console.log(min_val + Math.floor(Math.rsndom()*(max_val - min_val + 1)))
-console.log(Math.ceil(1+(Math.random()*10))) // -> it return the value between 1 and 10
+console.log(Math.ceil(1+(Math.random()*(10-1+1)))) // -> it return the value between 1 and 10
