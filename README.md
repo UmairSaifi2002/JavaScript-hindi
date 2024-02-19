@@ -1,4 +1,4 @@
 # JavaScript-hindi
-This is my first repository
+<h2>This is my first repository
 <br>
-and now nobody can stop me.
+and now nobody can stop me.</h2>
