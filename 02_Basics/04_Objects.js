@@ -76,3 +76,17 @@ console.log(Object.entries(tinderUser)) // -> [ [ 'id', '123abc' ], [ 'name', 's
 // them we use '.hasOwnProperty()' function to check
 // Syntax -> Object_name.hasOwnProperty('Property_name')
 console.log(tinderUser.hasOwnProperty('name')) // -> true
+
+// ******************************************* DeStructuring in Objects *************************************
+
+const course = {
+    coursename: "Js in Hindi",
+    price: "999",
+    courseInstructor:"UmairSaifi"
+}
+// in normal ways if we want to access the courseInstructor then we use
+console.log(course.courseInstructor) // -> 'UmairSaifi'
+
+// if we want to access this in a smart way then we use 
+const {courseInstructor:Instructor} = course
+console.log(Instructor) // -> 'UmairSaifi'
