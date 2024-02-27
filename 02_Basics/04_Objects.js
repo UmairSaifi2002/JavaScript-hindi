@@ -1,12 +1,12 @@
 // In this We will learn Object by contructor method
 // here Singleton property is imposed on the object because we use the consstructor method to define the object
 const tinderUser = new Object()
-// console.log(tinderUser) // -> {}
+console.log(tinderUser) // -> {}
 // Now we will give some values to the object
 tinderUser.id = "123abc"
 tinderUser.name = "sam"
 tinderUser.IsLoggedin = false
-// console.log(tinderUser) // -> { id: '123abc', name: 'sam', IsLoggedin: false }
+console.log(tinderUser) // -> { id: '123abc', name: 'sam', IsLoggedin: false }
 const regularUser = {
     email:"some@gmail.com",
     fullname:{
@@ -17,12 +17,12 @@ const regularUser = {
         }
     }
 }
-// console.log(regularUser)// -> This will show full object
-// console.log(regularUser.fullname) // -> { userFullname: { firstName: 'Mohammad', Middlename: 'UMAIR', Lastname: 'Saifi' } }
-// console.log(regularUser.fullname.userFullname) // -> { firstName: 'Mohammad', Middlename: 'UMAIR', Lastname: 'Saifi' }
-// console.log(regularUser.fullname.userFullname.firstName) // -> Mohammad
-// console.log(regularUser.fullname.userFullname.Middlename) // -> UMAIR
-// console.log(regularUser.fullname.userFullname.Lastname) // -> Saifi
+console.log(regularUser)// -> This will show full object
+console.log(regularUser.fullname) // -> { userFullname: { firstName: 'Mohammad', Middlename: 'UMAIR', Lastname: 'Saifi' } }
+console.log(regularUser.fullname.userFullname) // -> { firstName: 'Mohammad', Middlename: 'UMAIR', Lastname: 'Saifi' }
+console.log(regularUser.fullname.userFullname.firstName) // -> Mohammad
+console.log(regularUser.fullname.userFullname.Middlename) // -> UMAIR
+console.log(regularUser.fullname.userFullname.Lastname) // -> Saifi
 
 // Now we will Learn about how to join two or more than two objects.
 const obj1 = {1:"a",2:"b"}
@@ -36,14 +36,14 @@ const obj4 = {7:"g",8:"h"}
 // Syntax -> Object.assign(target,source) here source can either one or more than one object
 // if we have more than one object then -> Object.assign(target,source1,source2,source3,...)
 
-// const finalObject = Object.assign({},obj1,obj2,obj3,obj4)
-// console.log(finalObject) // -> {1:'a',2:'b',3:'c',4:'d',5:'e',6:'f',7:'g',8:'h'}
+const finalObject0 = Object.assign({},obj1,obj2,obj3,obj4)
+console.log(finalObject0) // -> {1:'a',2:'b',3:'c',4:'d',5:'e',6:'f',7:'g',8:'h'}
 
 // The another usefull solution to combine tw or more than objects
 // to use the spread operator in object 
 // {...Objectname,...Objectname, and so on}
 const finalObject = {...obj1,...obj2,...obj3,...obj4}
-// console.log(finalObject) // -> {1:'a',2:'b',3:'c',4:'d',5:'e',6:'f',7:'g',8:'h'}
+console.log(finalObject) // -> {1:'a',2:'b',3:'c',4:'d',5:'e',6:'f',7:'g',8:'h'}
 
 
 // if we have a array of object
