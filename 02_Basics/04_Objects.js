@@ -70,3 +70,9 @@ console.log(Object.values(tinderUser)) // -> [ '123abc', 'sam', false ]
 // Syntax -> Object.entries(object_name)
 // it will return an nested array
 console.log(Object.entries(tinderUser)) // -> [ [ 'id', '123abc' ], [ 'name', 'sam' ], [ 'IsLoggedin', false ] ]
+
+// if we want to chek that object have any properties
+// note :- Property == key
+// them we use '.hasOwnProperty()' function to check
+// Syntax -> Object_name.hasOwnProperty('Property_name')
+console.log(tinderUser.hasOwnProperty('name')) // -> true
