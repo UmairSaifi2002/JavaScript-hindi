@@ -27,3 +27,11 @@ const msg = LoginUserMessage("Umair") // -> Umair just logged in.
 // const msg = LoginUserMessage()
 // if the nothing is passed to the fuunction -> undefined just logged in.
 console.log(msg)
+
+// if we donot know how many parameter's is gonna be passed then 
+// we can use the rest operator 
+// Syntax -> function function_name(...parameter)
+function calculateCartPrice(...num1){
+    return num1 // -> this return an array ->[num,num,num,...]
+}
+console.log(calculateCartPrice(200,400,500,300)) // -> [200,400,500,300]
