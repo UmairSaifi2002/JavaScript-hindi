@@ -28,10 +28,29 @@ const msg = LoginUserMessage("Umair") // -> Umair just logged in.
 // if the nothing is passed to the fuunction -> undefined just logged in.
 console.log(msg)
 
+
+// most important note
 // if we donot know how many parameter's is gonna be passed then 
 // we can use the rest operator 
 // Syntax -> function function_name(...parameter)
 function calculateCartPrice(...num1){
-    return num1 // -> this return an array ->[num,num,num,...]
+    return num1 // -> this return an array of parameters passed to the function
 }
 console.log(calculateCartPrice(200,400,500,300)) // -> [200,400,500,300]
+
+const user = {
+    username:"Umair",
+    price:199
+}
+
+function handleObject(anyObject){
+    console.log(`user name is ${anyObject["username"]} and price is ${anyObject["price"]}`)
+}
+// handleObject(user) // -> user name is umair and price is 199
+handleObject({username:'Harry',price:999}) // -> user name is Harry and price is 999
+const mrNewArray = [1,2,3,4,5,6,7]
+
+function returnSecondValue(getArray){
+    return getArray[1]
+}
+console.log(returnSecondValue(mrNewArray))
