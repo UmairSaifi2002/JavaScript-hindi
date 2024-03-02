@@ -16,25 +16,25 @@ if(true){
     let var1 = 10
     const var2 = 20
     var var3 = 30
-    // console.log("Inner var1 -> ", var1)
-    // console.log("Inner var2 -> ", var2)
-    // console.log("Inner var3 -> ", var3)
+    console.log("Inner var1 -> ", var1)
+    console.log("Inner var2 -> ", var2)
+    console.log("Inner var3 -> ", var3)
 }
 
-// console.log("After -> ",var1)
-// console.log("After -> ",var2)
-// console.log("After -> ",var3)
+console.log("After -> ",var1)
+console.log("After -> ",var2)
+console.log("After -> ",var3)
 
-// function one(){
-//     const username = "Hitesh"
-//     function two(){
-//         const website = "www.sidhiraah.com"
-//         console.log(username);
-//     }
-//     console.log(website) 
-//     two()
-// }
-// one()
+function one(){
+    const username = "Hitesh"
+    function two(){
+        const website = "www.sidhiraah.com"
+        console.log(username);
+    }
+    console.log(website) 
+    two()
+}
+one()
 
 
 if(true){

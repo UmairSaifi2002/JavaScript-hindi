@@ -16,7 +16,7 @@ const user = {
     price : 999,
     welcomeMessage : function(){
         console.log(`${this.username} , Welcome to the Website!`);
-        // console.log(this) // -> it will print the whole current context which is the current object 
+        console.log(this) // -> it will print the whole current context which is the current object 
     }
 }
 user.welcomeMessage() // -> Umair , Welcome to the Website!
@@ -38,13 +38,13 @@ console.log(this) // -> it will print the whole current context which is {}
 // }
 
 // This is an Arrow function
-// const coffee = ()=>{
-//     let username = "Umair"
-//     // console.log(this) // -> {}
-//     console.log(this.username)
-// }
+const coffee = ()=>{
+    let username = "Umair"
+    // console.log(this) // -> {}
+    console.log(this.username)
+}
 
-// coffee()
+coffee()
 
 
 // The method given below is with the {} which is used for explicit return

@@ -13,7 +13,7 @@ function addTwoNumbers(Num1,Num2){
 }
 // console.log(addTwoNumbers(3,4))
 const result = addTwoNumbers(3,4)
-// console.log("Result : ",result)
+console.log("Result : ",result)
 // if we donot use return in a function then the result undefined
 
 function LoginUserMessage(username = "Harry"){ // if nothing is passed to the string then we can set the default values to the parameters
