@@ -20,3 +20,14 @@ for (const key in programming) {
     // console.log(key) // it displays the index of the array
     console.log(`The value at ${key}th index is -> ${ programming[key]}`)
 }
+
+const map = new Map()
+map.set('IN','India')
+map.set('PAK','Pakistan')
+map.set('AFG','Afganistan')
+map.set('UZ','Uzbekistan')
+map.set('TURK','Turkey')
+
+for (const key in map) {
+    console.log(key) // this shows nothing bbecause map is not iterable
+}
