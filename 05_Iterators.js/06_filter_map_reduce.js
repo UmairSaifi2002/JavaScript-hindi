@@ -1,10 +1,10 @@
 const coding = ['js','ruby','java','python','cpp']
 
 const values = coding.forEach( (item) => {
-    // console.log(item)
+    console.log(item)
 } )
 
-// console.log(values) // -> undefined
+console.log(values) // -> undefined
 
 // ****************************************** Filter() ************************************************
 
@@ -17,7 +17,7 @@ const newNum1 = myNum.filter( (num) => num > 4 )
 const newNums = myNum.filter( (num) => {
     return num > 4
 } )
-// console.log(newNums)
+console.log(newNums)
 
 const newNum2=[]
 myNum.forEach( (element) => {
@@ -26,7 +26,7 @@ myNum.forEach( (element) => {
         newNum2.push(element)
     }
 })
-// console.log(newNum2)
+console.log(newNum2)
 
 
 const books = [
@@ -47,21 +47,21 @@ const userBooks = books.filter( (book) => {
     return book.publish >= 1995 && book.genre === 'History'
 } )
 
-// console.log(userBooks)
+console.log(userBooks)
 
 
 // ******************************************* Map() **********************************************
 const myNumbers = [1,2,3,4,5,6,7,8,9,10]
 let newNumbers = myNumbers.map( (num) => num+10 )
-// console.log(newNumbers) // it return the array of updated numbers
+console.log(newNumbers) // it return the array of updated numbers
 
-// const newNumbers = myNumbers.map( (num) => {num+10} )
-// console.log(newNumbers) // it return the array of undefined
+newNumbers = myNumbers.map( (num) => {num+10} )
+console.log(newNumbers) // it return the array of undefined
 
 // Now we will Learn about the chaining of a functions 
 
 newNumbers = myNumbers.map( (element) => element*10 ).map( (element) => element+2).filter( (item) => item >= 40)
-// console.log(newNumbers)
+console.log(newNumbers)
 
 // ************************************* Reduce() ****************************************
 // Syntax for reduce
@@ -69,10 +69,10 @@ newNumbers = myNumbers.map( (element) => element*10 ).map( (element) => element+
 
 const myArray = [1,2,3,4,5,6]
 const myTotal = myArray.reduce( (acc, currval) => {
-    // console.log(`acc: ${acc} and currval: ${currval}`)
+    console.log(`acc: ${acc} and currval: ${currval}`)
     return acc + currval
 },0 )
-//console.log(myTotal)
+console.log(myTotal)
 
 const shoppingCart = [
     {
