@@ -35,3 +35,10 @@ coding.forEach((element, index, arr)=> {
 })
 
 // Now we will learn about how to work with -> [{},{},{}]
+const myCoding = [{programmingLanguage: 'JavaScript',programmingFileName: 'js'},
+            {programmingLanguage: 'Java',programmingFileName: 'java'},
+            {programmingLanguage: 'Python',programmingFileName: 'py'}]
+
+myCoding.forEach( (element) => {
+    console.log(element.programmingLanguage)
+} )
