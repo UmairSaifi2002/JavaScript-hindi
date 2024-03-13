@@ -13,7 +13,31 @@
 </head>
 <body>
     <script>
-        
+        // Creating a new element
+        const div = document.createElement('div');
+        console.log(div);
+        // Now setting a class for newly created div element
+        div.className = 'main-class';
+        // Now setting a id for newly created div element
+        div.id = 'main-id';
+
+        // using setAttribute
+        div.setAttribute('class', 'New-Class');
+
+        // giving some styling
+        div.style.backgroundColor = 'black';
+        div.style.color = 'green';
+
+        // settng an inner text for the newly created (div)element
+        //div.innerText = 'Code with Umair!';
+        // The Alternative way to prform this particular task
+        // first creating text node and contains in it with a variable
+        const text = document.createTextNode("Code with Umair!")
+        // Now Append it to the the div element
+        div.appendChild(text)
+
+        // Now we are going to attach all stuff to the document
+        document.body.appendChild(div)
     </script>
 </body>
 </html>
