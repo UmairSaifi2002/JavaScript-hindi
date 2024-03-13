@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="week">
+        <div class="days">Monday</div>
+        <div class="days">Tuesday</div>
+        <div class="days">Wednesday</div>
+        <div class="days">Thursday</div>
+        <div class="days">Friday</div>
+        <div class="days">Saturday</div>
+        <div class="days">Sunday</div>
+    </div>
+    <script>
+        // Target - 1
+        // Select the Parent element(week) and fetch its children
+        const parent = document.querySelector('.week')
+        //undefined
+        console.log(parent)
+        //VM1251:1 <div class=​"week">​<div class=​"days">​Monday​</div>​<div class=​"days">​Tuesday​</div>​<div class=​"days">​Wednesday​</div>​<div class=​"days">​Thursday​</div>​<div class=​"days">​Friday​</div>​<div class=​"days">​Saturday​</div>​<div class=​"days">​Sunday​</div>​</div>​
+        //undefined
+        console.log(parent.children)
+        //VM1286:1 HTMLCollection(7) [div.days, div.days, div.days, div.days, div.days, div.days, div.days]
+        //undefined
+        console.log(parent.children[2].innerText)
+        for (let i = 0; i < parent.children.length; i++) {
+            console.log(parent.children[i].innerText);
+        }
+        parent.children[1].style.color = "blue";
+        console.log(parent.frameElementChild);
+        console.log(parent.lastElementChild);
+
+        const One_Day = document.querySelector('.days');
+        console.log(One_Day);
+        // selecting parent node by it's children
+        console.log(One_Day.parentElement);
+        // selecting next sibling
+        console.log(One_Day.nextElementSibling);
+    </script>
+</body>
+</html>

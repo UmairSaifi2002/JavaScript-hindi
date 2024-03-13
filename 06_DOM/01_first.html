@@ -13,12 +13,12 @@
 <body class="bg-black">
     <div>
         <h1 id="title" class="heading list">DOM Learning on Chai aur Code <span>Test text</span> </h1>
-        <h2>Lorem ipsum dolor sit.</h2>
-        <h2>Lorem ipsum dolor sit.</h2>
-        <h2>Lorem ipsum dolor sit.</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit!</p>
+        <h2 class="list">Lorem ipsum dolor sit.</h2>
+        <h2 class="list">Lorem ipsum dolor sit.</h2>
+        <h2 class="list">Lorem ipsum dolor sit.</h2>
+        <p class="list">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit!</p>
         <input type="password"></input>
-        <ul class = "List">
+        <ul class = "list">
             <li>One</li>
             <li>two</li>
             <li>three</li>
@@ -112,7 +112,15 @@
             l.style.backgroundColor = "red"
         })
         
+        const tempClassList = document.getElementsByClassName('list')
+        undefined
 
+        tempClassList
+        HTMLCollection(6) [h1#title.heading.list, h2.list, h2.list, h2.list, p.list, ul.list, title: h1#title.heading.list]
+        
+        // Converting HTML collection into Array
+        Array.from(tempClassList)
+        (6) [h1#title.heading.list, h2.list, h2.list, h2.list, p.list, ul.list]
         */
     </script>
 </body>
