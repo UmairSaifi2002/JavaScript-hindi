@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code With Umair | DOM</title>
+    <style>
+        body{
+            background-color: black;
+            color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+    <script>
+        // The way we add element to the DOM
+        function addLanguage(LangName){
+            const li = document.createElement('li');
+            // li.innerHTML = `${LangName}`;
+            li.innerText = `${LangName}`;
+            document.querySelector('.language').appendChild(li);
+            // it only works when you use [position] these brackets -> document.getElementsByClassName('language')[0].appendChild(li);
+            // document.getElementsByClassName('language')[0].appendChild(li);
+        }
+        addLanguage("Java")
+        addLanguage("Python")
+        addLanguage("C++")
+        addLanguage("Kotlin")
+
+        // 
+    </script>
+</body>
+</html>
