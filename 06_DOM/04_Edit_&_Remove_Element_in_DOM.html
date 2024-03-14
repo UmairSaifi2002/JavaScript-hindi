@@ -16,10 +16,15 @@
         <li>JavaScript</li>
     </ul>
     <script>
+        //Creating Elements
+
         // The way we add element to the DOM
+        // The most Basic way to add the element in DOM
+        // Here Every time when the function is called the document tree is traverse by the function which is somewhere not good
         function addLanguage(LangName){
             const li = document.createElement('li');
             // li.innerHTML = `${LangName}`;
+            // by this below line the whole document is traversed
             li.innerText = `${LangName}`;
             document.querySelector('.language').appendChild(li);
             // it only works when you use [position] these brackets -> document.getElementsByClassName('language')[0].appendChild(li);
@@ -30,7 +35,35 @@
         addLanguage("C++")
         addLanguage("Kotlin")
 
-        // 
+        // But Don't Worry We have an Optimized wway to perform this function
+        function addOptiLanguage(LangName){
+            const li = document.createElement("li");
+            // the below line is not traverse it directly create and append the textNode which save ttraversing cost
+            li.appendChild(document.createTextNode(LangName));
+            document.querySelector('.language').appendChild(li);
+        }
+        addOptiLanguage("Swift");
+        addOptiLanguage("golang");
+
+
+        // Edit Element
+
+        const secondLang = document.querySelector("li:nth-child(2)");
+        // method 1 -> by changing innerHTML
+        // secondLang.innerHTML = "Mojo"
+
+        //method 2 -> by creatin a new element and replace it by existing one
+        const newli = document.createElement('li');
+        newli.textContent = "Mojo";
+        secondLang.replaceWith(newli);
+
+        // method 3 -> by using '.OuterHTML' mehod
+        const firstLang = document.querySelector('li:first-child');
+        firstLang.outerHTML = '<li> TypeScript</li>';
+
+        // Removing an Element
+        const lastLang = document.querySelector('li:last-child');
+        lastLang.remove() // -> it removes golang from the list
     </script>
 </body>
 </html>
