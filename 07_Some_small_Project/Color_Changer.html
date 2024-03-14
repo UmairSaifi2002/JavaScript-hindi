@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Changer</title>
+</head>
+<style>
+    body{
+        background-color: rgb(37, 37, 37);
+    }
+    nav{
+        margin: 30px;
+        padding: 30px;
+        color:white;
+        font-size: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .button{
+        margin: 4px;
+        padding: 40px;
+    }
+    #one{
+        background-color: antiquewhite;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #two{
+        background-color:aqua;
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+    #three{
+        background-color:blue;
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+    #four{
+        background-color:chartreuse;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .content{
+        margin-top: 80px;
+    }
+    .text{
+        color: azure;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+</style>
+<body>
+    <nav class="nav">The Color Changer</nav>
+    <div class="container">
+        <button class="button" id="one">AntiqueWhite</button>
+        <button class="button" id="two">Aqua</button>
+        <button class="button" id="three">Blue</button>
+        <button class="button" id="four">Chartreuse</button>
+    </div>
+    <div class="content">
+        <p class="text">Try Clicking on One of the Color above</p>
+        <p class="text">to change the background color of this page!</p>
+    </div>
+    <script src="Color_Changer.js"></script>
+</body>
+</html>
