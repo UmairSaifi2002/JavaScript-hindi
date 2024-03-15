@@ -8,24 +8,53 @@
         body{
             background-color: rgb(24, 24, 24);
             color: whitesmoke;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        h1,.one,.two{
+            display: flex;
+            justify-content: center;
+        }
+        .button{
+            margin: 20px;
+            padding: 15px;
+            border-radius: 20px;
+            font-size: 15px;
+        }
+        form{
+            /* justify-items: center;
+            justify-content: center; */
+            /* justify-self: center; */
+            display: flex;
+            flex-direction: column;
+            /* flex-wrap: wrap;
+            align-content: center; */
+            align-items: center;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>BMI calculator</h1>
-        <form action="">
-            <p>
-                <label for="height">Height in 'cm'</label>
+        <h1>BMI Calculator</h1>
+        <form>
+            <p class="one">
+                <label for="height">Height in 'cm' : </label>
                 <input type="text" id="height">
             </p>
-            <p>
-                <label for="weight">Weight in 'kg'</label>
+            <p class="two">
+                <label for="weight">Weight in 'kg' : </label>
                 <input type="text" id="weight">
             </p>
-            <button>Calculate</button>
-            
+            <button class="button">Calculate</button>
+            <div id="result"></div>
+            <div id="weight-guide">
+                <h2>BMI Weight Guide</h2>
+                <p>Ubder Weight = Less than 18.5</p>
+                <p>Normal weight = 18.5 - 24.9</p>
+                <p>Overweight = 25 - 29.9</p>
+                <p>Obesity = BMI of 30 or greater</p>
+            </div>
         </form>
     </div>
+    <script src="BMI_calculator.js"></script>
 </body>
 </html>
