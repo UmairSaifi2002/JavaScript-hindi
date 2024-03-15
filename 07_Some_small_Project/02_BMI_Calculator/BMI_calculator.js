@@ -20,7 +20,20 @@ form.addEventListener('submit',function (e){
     else{
         // here we use '.toFixed(position)' method to display the floating number upto needed position.
         const bmi = (weight / ((height/100)*(height/100))).toFixed(2);
-        results.innerHTML = `Your BMI Score is : ${bmi}`;
+        let msg = '';
+        if(bmi <= 18.5){
+            msg = 'Under Weight';
+        }
+        else if( bmi > 18.5 && bmi < 25 ){
+            msg = 'Normal weight';
+        }
+        else if( bmi > 25 && bmi < 30){
+            msg = 'Overweight';
+        }
+        else{
+            msg = 'Obesity';
+        }
+        results.innerHTML = `Your BMI Score is : ${bmi} -> ${msg}`;
         results.style.padding = '8px';
     }
 })
