@@ -13,9 +13,9 @@ form.addEventListener('submit',function (e){
     const weight = parseInt(document.querySelector('#weight').value);
     const results = document.querySelector('#result');
 
-    if(height === '' || height < 0 || isNaN(height)){
+    if(height === '' || height < 0 || isNaN(height) && weight === '' || weight < 0 || isNaN(weight)){
         results.innerHTML = 'Please give a valid Input!';
-        results.style.padding = '8px';
+        results.style.padding = '10px';
     }
     else{
         // here we use '.toFixed(position)' method to display the floating number upto needed position.
