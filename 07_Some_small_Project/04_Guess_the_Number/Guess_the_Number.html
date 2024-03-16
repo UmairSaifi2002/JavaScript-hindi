@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Number</title>
+    <style>
+        body{
+            background-color: rgb(24, 24, 24);
+            color: whitesmoke;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin-top: 80px;
+        }
+        /* h1{ font-size: 60px; }
+        p{ font-size: 30px;} */
+        h1,p,form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #guess{
+            margin: 10px;
+            /* font-size: 30px; */
+        }
+        .guessField{
+            margin: 10px;
+            /* font-size: 20px; */
+        }
+        .guessSubmit{
+            border-radius: 20px;
+            margin: 10px;
+            /* font-size: 20px; */
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <h1>Number Guessing Game</h1>
+        <p>Try and Guess a Number between 1 to 100</p>
+        <p>You have 10 Attempts to Guess the Correct Number.</p>
+        <br>
+        <form class="form">
+            <label for="guessField" id="guess">Guess a Number</label>
+            <input type="text" id="guessField" class="guessField">
+            <input type="submit" id="subt" value="Submit Guess" class="guessSubmit">
+        </form>
+        <div class="resultParas">
+            <p>Previous Guessees<span class="guesses"></span></p>
+            <p>Guesses Remaining<span class="lastResult">10</span></p>
+            <p class="lowOrHi"></p>
+        </div>
+    </div>
+    <script src="Guess_the_Number.js"></script>
+</body>
+</html>
