@@ -1,3 +1,7 @@
+// Map, reduce, and filter are all array methods in JavaScript.
+// Each one will iterate over an array and perform a transformation or computation.
+// Each will return a new array based on the result of the function
+
 const coding = ['js','ruby','java','python','cpp']
 
 const values = coding.forEach( (item) => {
@@ -7,6 +11,9 @@ const values = coding.forEach( (item) => {
 console.log(values) // -> undefined
 
 // ****************************************** Filter() ************************************************
+// The filter() method takes each element in an array and it applies a conditional statement against it. 
+// If this conditional returns true, the element gets pushed to the output array. 
+// If the condition returns false, the element does not get pushed to the output array.
 
 const myNum = [1,2,3,4,5,6,7,8,9,10]
 const newNum1 = myNum.filter( (num) => num > 4 )
@@ -51,6 +58,12 @@ console.log(userBooks)
 
 
 // ******************************************* Map() **********************************************
+// The map() method is used for creating a new array from an existing one, 
+// applying a function to each one of the elements of the first array.
+
+// In the callback, only the array element is required.
+// Usually some action is performed on the value and then a new value is returned.
+
 const myNumbers = [1,2,3,4,5,6,7,8,9,10]
 let newNumbers = myNumbers.map( (num) => num+10 )
 console.log(newNumbers) // it return the array of updated numbers
@@ -66,6 +79,18 @@ console.log(newNumbers)
 // ************************************* Reduce() ****************************************
 // Syntax for reduce
 // reduce(callbackFn, initialValue)
+// The reduce() method reduces an array of values down to just one value. 
+// To get the output value, it runs a reducer function on each element of the array.
+
+// The callback argument is a function that will be called once for every item in the array. 
+// This function takes four arguments, but often only the first two are used.
+// 1, accumulator - the returned value of the previous iteration
+// 2. currentValue - the current item in the array
+// 3, index - the index of the current item
+// 4, array - the original array on which reduce was called
+
+// The initialValue argument is optional. 
+// If provided, it will be used as the initial accumulator value in the first call to the callback function.
 
 const myArray = [1,2,3,4,5,6]
 const myTotal = myArray.reduce( (acc, currval) => {

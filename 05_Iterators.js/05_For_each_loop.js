@@ -18,7 +18,7 @@ coding.forEach((element)=>{
 // we also pass the name of the function to the for each loop
 
 // Note :- if we are defining a function with in a for each loop then we need not to define the name of the function
-// but if we pass the already definfed function to the for each loop then pass the name of the functio nto the for each loop
+// but if we pass the already definfed function to the for each loop then pass the name of the function to the for each loop
 
 function printMe(element){
     console.log(element)

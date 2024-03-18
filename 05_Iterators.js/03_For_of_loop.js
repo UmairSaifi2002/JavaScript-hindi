@@ -1,17 +1,17 @@
 //******************************** "For of" Loop ***************************
 
-// ["","","","","",""]
-// [{},{},{},{},{},{}]
+// ["","","","","",""] -> Array
+// [{},{},{},{},{},{}] -> object within Array
 
 const arr = [1,2,3,4,5,6]
 
 for (const num of arr) {
-    // console.log(num)
+    console.log(num)
 }
 
 const greeting = "Hello, world!"
 for (const greet of greeting) {
-    // console.log(greet)
+    console.log(greet)
 }
 
 // *********** MAP ***********
@@ -41,7 +41,7 @@ map.set('TURK','Turkey')
 //   'TURK' => 'Turkey'
 // }
 
-map.set('IN',"Inadia")
+map.set('IN',"INDIA")
 // console.log(map)
 
 for (const [key,value] of map) {

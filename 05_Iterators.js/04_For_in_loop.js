@@ -7,11 +7,11 @@ const myObject = {
 
 // we can iterate an object using 'for in' loop
 for(const key in myObject){
-    // console.log(key) // it will display all the key's of the object.
+    console.log(key) // it will display all the key's of the object.
 }
 
 for(const key in myObject){
-    // console.log(`${key} -> ${myObject[key]}`)
+    console.log(`${key} -> ${myObject[key]}`) // it will display all the key's of the object along with values
 }
 
 // using for in loop for array

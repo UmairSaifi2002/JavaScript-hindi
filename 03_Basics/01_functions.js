@@ -18,7 +18,7 @@ console.log("Result : ",result)
 
 function LoginUserMessage(username = "Harry"){ // if nothing is passed to the string then we can set the default values to the parameters
     if(username===undefined){ // if(!username)
-        console.log("Please enter a username")
+        console.log("Please enter a valid username")
         return
     }
     return `${username} just Logged in.`
@@ -54,3 +54,4 @@ function returnSecondValue(getArray){
     return getArray[1]
 }
 console.log(returnSecondValue(mrNewArray))
+
