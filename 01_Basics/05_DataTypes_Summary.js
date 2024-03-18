@@ -20,7 +20,7 @@ let userEmail // the value of user email is undefined
 const id = Symbol('123')
 const anotherId = Symbol('123')
 const BigNumber = 342342332434n // This is BigInt
-console.log(id==anotherId)
+console.log(id==anotherId) // -> false
 
 // Non-Premitive DataType
 // Array, Object, Functions
@@ -70,5 +70,5 @@ let userOne = {
 
 let userTwo = userOne
 userTwo.email = "UserTwo@google.com"
-console.log(userOne.email)
-console.log(userTwo.email)
+console.log(userOne.email) // -> UserTwo@google.com
+console.log(userTwo.email) // -> UserTwo@google.com

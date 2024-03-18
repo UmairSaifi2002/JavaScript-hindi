@@ -19,10 +19,10 @@ let state
 // These are non-premitive DataTypes.
 // Objects
 
-console.log(typeof(name))
-console.log(typeof(age))
-console.log(typeof(isLoggrdIn))
-console.log(typeof(state))
-console.log(typeof(null))
-console.log(typeof(undefined))
-console.log(typeof(object))
+console.log(typeof(name)) // -> string
+console.log(typeof(age)) // -> number
+console.log(typeof(isLoggrdIn)) // -> boolean
+console.log(typeof(state)) // -> undefined
+console.log(typeof(null)) // -> object
+console.log(typeof(undefined)) // -> undefined
+console.log(typeof(object)) // -> undefined

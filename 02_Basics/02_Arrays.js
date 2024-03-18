@@ -1,3 +1,4 @@
+// Let's Learn about the important functions of Arrays
 const Marvel_heros = ["Ironman","Spiderman","Thor"]
 const DC_heroes = ["Superman","Batman","flash"]
 
@@ -22,11 +23,14 @@ const another_real_array = another_array.flat(Infinity) // use infinity when dep
 // console.log(another_real_array)
 
 console.log(Array.isArray("Umair"))// .isArray() checks that the given input is array or not
+// -> false
 console.log(Array.from("Umair")) // .from() it convert the input into the array
+// -> [ 'U', 'm', 'a', 'i', 'r' ]
 console.log(Array.from({name:"Umair"})) // -> interesting
+// -> []
 
 let score1 = 100
 let score2 = 200
 let score3 = 300
 
-console.log(Array.of(score1, score2, score3))
+console.log(Array.of(score1, score2, score3)) // -> [100, 200, 300]

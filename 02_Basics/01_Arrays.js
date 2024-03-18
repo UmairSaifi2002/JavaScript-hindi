@@ -3,9 +3,9 @@
 
 let myArray = [0,1,2,3,4,5]
 //indexing
-console.log(myArray[0])
-console.log(myArray[1])
-console.log(myArray[2])
+console.log(myArray[0]) // -> 0
+console.log(myArray[1]) // -> 1
+console.log(myArray[2]) // -> 2
 // JavaScript array-copy operation creates shallow copies rather than deep copies
 
 // shallow copies means A copy of an object is a copy whose properties share the same references as those of the source
@@ -16,10 +16,10 @@ console.log(myArray[2])
 // original/source m kuch bhi change nhi hoga agr copies m kuch change hoga to
 
 const myArray2 = new Array(1,2,3,4,5)
-console.log(myArray2)
-console.log(myArray2[0])
-console.log(myArray2[1])
-console.log(myArray2[2])
+console.log(myArray2) // -> [1,2,3,4,5]
+console.log(myArray2[0]) // -> 1
+console.log(myArray2[1]) // -> 2
+console.log(myArray2[2]) // -> 3
 
 // *************************************** Array Methods ***************************************
 
@@ -57,15 +57,15 @@ console.log(typeof newArray) // -> String
 
 
 // Now we will Learn About the  'slice(start,end)'  &  'splice(start,end)'  functions in Array
-console.log("Original_Array -> ",myArray) // -> [0,1,2,3,4,5]
+console.log("Original_Array -> ",myArray) // Original_Array -> [0,1,2,3,4,5]
 
 const myNewArray1 = myArray.slice(1,3)
-console.log("Using slice(1,3) -> ",myNewArray1) // -> [1,2]
-console.log("After Using slice(1,3) -> ",myArray) // -> [0,1,2,3,4,5]
+console.log("Using slice(1,3) -> ",myNewArray1) // Using slice(1,3) -> [1,2]
+console.log("After Using slice(1,3) -> ",myArray) // After Using slice(1,3) -> [0,1,2,3,4,5]
 
 const myNewArray2 = myArray.splice(1,3)
-console.log("Using splice(1,3) -> ",myNewArray2) // -> [1,2,3]
-console.log("After Using splice(1,3) -> ",myArray) // -> [0,4,5]
+console.log("Using splice(1,3) -> ",myNewArray2) // Using splice(1,3) -> [1,2,3]
+console.log("After Using splice(1,3) -> ",myArray) // After Using splice(1,3) -> [0,4,5]
 
 // ************************************** MOST IMPORTANT **************************************
 // ************************************** SLICE() VS SPLICE() **************************************
