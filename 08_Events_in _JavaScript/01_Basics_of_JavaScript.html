@@ -49,32 +49,32 @@
 
     // else
     // Clicked inside the ul
-    document.getElementById('images').addEventListener('click', function(e){
-        console.log("Clicked inside the ul");
-    },false)
+    // document.getElementById('images').addEventListener('click', function(e){
+    //     console.log("Clicked inside the ul");
+    // },false)
     
 
-    document.getElementById('owl').addEventListener('click', function(e){
-        console.log("Owl is Clicked");
-    },false)
+    // document.getElementById('owl').addEventListener('click', function(e){
+    //     console.log("Owl is Clicked");
+    // },false)
 
     // the Event Capturing which starts when the third parameter is 'true'
     // and this is just opposite to the Event bubbling's behavior
 
     // to stop event propagation we use .stopPropagation()
-    document.getElementById('japan').addEventListener('click', function(e){
-        console.log("Japan is Clicked");
-        e.stopPropagation();
-    },false)
+    // document.getElementById('japan').addEventListener('click', function(e){
+    //     console.log("Japan is Clicked");
+    //     e.stopPropagation();
+    // },false)
 
     // now we will learn about the preventDefault
     // let's prevent the function of the google link
     // this will done by the preventDefault function
-    document.getElementById('google').addEventListener('click', (e) => {
-        console.log('Google is Clicked');
-        e.preventDefault();
-        e.stopPropagation();
-    },false)
+    // document.getElementById('google').addEventListener('click', (e) => {
+    //     console.log('Google is Clicked');
+    //     e.preventDefault();
+    //     e.stopPropagation();
+    // },false)
 
 
     // Your Assignment is to disappear the image which is clicked by the user.
@@ -83,8 +83,14 @@
         // console.log(e);// -> it gives pointer event object
         // console.log(e.target);// -> it gives the image element
         // console.log(e.target.parentNode);// -> it gives the <li>...</li> element
-        // let removeIt = e.target.parentNode.remove();
-        // let removeIt = e.parentNode.removeChild(removeIt);
+
+        // hamne yaha check isiliye lagaya h kyu ki jab ham img ko click karengy to img disappear hogi
+        // pr agr ham li ko click kr dengy to sare li disappear ho jayengy isko prevent krny k liy check lagaya h
+        if (e.target.tagName === 'IMG') {
+            console.log(e.target.id);
+            let removeIt = e.target.parentNode.remove();
+            // let removeIt = e.parentNode.removeChild(removeIt);
+        }
     },false)
    </script>
 </body>
