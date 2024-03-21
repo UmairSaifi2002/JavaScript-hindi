@@ -75,6 +75,17 @@
         e.preventDefault();
         e.stopPropagation();
     },false)
+
+
+    // Your Assignment is to disappear the image which is clicked by the user.
+    // First you have to select the clicked image.
+    document.getElementById('images').addEventListener('click',(e) => {
+        // console.log(e);// -> it gives pointer event object
+        // console.log(e.target);// -> it gives the image element
+        // console.log(e.target.parentNode);// -> it gives the <li>...</li> element
+        // let removeIt = e.target.parentNode.remove();
+        // let removeIt = e.parentNode.removeChild(removeIt);
+    },false)
    </script>
 </body>
 </html>
