@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async nature of JavaScript.</title>
+</head>
+<body>
+    <h1>Chai aur Code</h1>
+    <button id="Stop">Stop!</button>
+    <script>
+        const umair = function () {
+            console.log("Umair Saifi!!");
+        }
+        const changeText = function () {
+            document.querySelector('h1').innerHTML = 'Best JS Series.'
+            console.log('Inner HTML is changed...');
+        }
+        const changeMe = setTimeout(changeText, 2000);
+        // const changeMe = setTimeout(umair, 2000);
+
+        // to stop this setTimeout function we use clearTimeout function
+        document.getElementById('Stop').addEventListener('click',() => {
+            clearTimeout(changeMe);
+            console.log('STOPPED');
+        },false);
+    </script>
+</body>
+</html>

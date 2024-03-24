@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        learn async function of javascript.
+    </title>
+</head>
+<body>
+    <h1>Coffee aur JavaScript</h1>
+    <button id="start">Start.</button>
+    <button id="stop">Stop!</button>
+</body>
+<script>
+    // setInterval(() => {
+    //     console.log('Umair Saifi...');
+    // }, 2000);
+
+    // const Name = (str) => {
+    //     console.log(str,'Umair Saifi... ');
+    // }
+    // // setInterval(function / function reference , time period , parameter for function)
+    // const intervalId = setInterval(Name, 10000,"Hello!!, ");
+
+    // // to clear/Stop this setInterval function
+    // const stopIntervalId = clearInterval(intervalId)
+
+    // The Assignment is to start printing Greeting and name in console 
+    // when start button is clicked
+    // when stop button is clicked THE printing is stop.
+
+    const start = document.getElementById('start');
+    const stop = document.getElementById('stop');
+    let intervalId; // Variable to hold the interval ID
+
+    // Function to start the interval
+    const startInterval = () => {
+        intervalId = setInterval(() => {
+            console.log('Hello, Umair!', Math.ceil(Math.random() * 10 + 1));
+        }, 5000);
+    };
+
+    // Function to stop the interval
+    const stopInterval = () => {
+        clearInterval(intervalId);
+    };
+
+    // Event listener for start button
+    start.addEventListener('click', startInterval, false);
+
+    // Event listener for stop button
+    stop.addEventListener('click', stopInterval, false);
+
+</script>
+</html>
