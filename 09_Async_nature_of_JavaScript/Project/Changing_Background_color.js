@@ -20,18 +20,23 @@ function randomColor(){
 
 // function for setInterval
 const startInterval = () => {
-    intervalId = setInterval(() => {
-        // Here Object value is Stored in the variable
-        let value = randomColor();
-        // to Access the different values we have to use object method
-        document.body.style.backgroundColor = `rgb(${value.val1}, ${value.val2}, ${value.val3})`;
-        console.log("Started");
-    }, 2000);
+    // Here we apply a check if theinternall === null then only change the background color.
+    if(!intervalId){
+        intervalId = setInterval(() => {
+            // Here Object value is Stored in the variable.
+            let value = randomColor();
+            // to Access the different values we have to use object method.
+            document.body.style.backgroundColor = `rgb(${value.val1}, ${value.val2}, ${value.val3})`;
+            console.log("Started");
+        }, 2000);
+    }
 }
 
 // function for stopInterval
 const stopInterval = () => {
     clearInterval(intervalId);
+    // After close the interval we reseted the value of intervalId.
+    intervalId = undefined;
 }
 
 // Now addEventListener to the button
