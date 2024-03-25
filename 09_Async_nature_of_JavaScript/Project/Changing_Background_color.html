@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            border-radius: 20px;
+            padding: 15px;
+            margin: 0px 5px 0px 5px;
+        }
+        body{
+            background-color: grey;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .button{
+            display: flex;
+            justify-content: center;
+            /* align-items: center; */
+            margin-top: 70px;
+        }
+        .context{
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            align-items: center;
+            margin: 50px;
+        }
+        p{
+            margin: 5px;
+            padding: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Change BackGround Color</h1>
+        <div class="button">
+            <button id="start">Start</button>
+            <button id="stop">Stop</button>
+        </div>
+    </div>
+    <div class="context">
+        <p>if you click on start button</p>
+        <p>the BackGround Color changes in every 2 seconds</p>
+        <p>To stop this Click on Stop button</p>
+    </div>
+    <script src="Changing_Background_color.js"></script>
+</body>
+</html>
