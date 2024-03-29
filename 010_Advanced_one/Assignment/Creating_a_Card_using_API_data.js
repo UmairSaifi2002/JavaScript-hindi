@@ -36,7 +36,7 @@ function createCard(photo, followers) {
         <div class="Photo">
             <img src="${photo}" alt="User Photo">
         </div>
-        <h2 class="content">${followers}</h2>
+        <h2 class="content" style="background-color = 'white';">${followers}</h2>
     `;
     document.body.appendChild(div);
 }
