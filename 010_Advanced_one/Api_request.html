@@ -59,15 +59,20 @@
     </div>
 </body>
 <script>
-    const requestUrl = 'https://api.github.com/users/hiteshchoudhary'
+    // const requestUrl = 'https://api.github.com/users/hiteshchoudhary'
+    const requestUrl = 'https://api.github.com/users/UmairSaifi2002'
     const xhr = new XMLHttpRequest();
     xhr.open('GET', requestUrl)
+    console.log(this.responseText);
     xhr.onreadystatechange = function(){
         console.log(xhr.readyState);
         if (xhr.readyState === 4) {
+            // Jab bhi data url se ata h to most probably vo string ki form ata h
+            // isilye hame pehle data ko json form m parse karana padta h
             const data = JSON.parse(this.responseText)
             console.log(typeof data);
             console.log(data.followers);
+            console.log(data);
         }
     }
     xhr.send();
