@@ -35,13 +35,14 @@
 
     // the Third Parameter is true/false let see what is this
     // This third parameter is EventPropagation which depends upon the true/false.
+    // Note :- This is not the true or false you are thinking about it is completely different.
     // The EventsPropagation are twoo tyes Event Bubbling or Event Capturing
     // When the third Parameter is false -> Event Bubbling.
     // When the third Parameter is true -> Event Capturing.
 
     // The Given below is the example of Event bubbling
     // we know the nature of bubble which propagate from bottom to top
-    // so the sequence of events will be triggered is
+    // so the sequence of events will be triggered in same way
 
     // if we click on owl so it print
     // Owl is Clicked
@@ -59,7 +60,7 @@
     // },false)
 
     // the Event Capturing which starts when the third parameter is 'true'
-    // and this is just opposite to the Event bubbling's behavior
+    // and its behaviour is just opposite to the Event bubbling's behavior
 
     // to stop event propagation we use .stopPropagation()
     // document.getElementById('japan').addEventListener('click', function(e){
