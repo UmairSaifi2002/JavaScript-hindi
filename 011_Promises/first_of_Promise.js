@@ -164,7 +164,8 @@ async function getAllUsers1() {
 // getAllUsers1();
 
 // Now if we want to use .then() & .catch() statements
-
+// this code want's to get some attention
+// you have to go through it
 fetch('https://jsonplaceholder.typicode.com/users').then((response) => {
     return response.json();
 }).then((value)=>{
