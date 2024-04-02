@@ -1,6 +1,6 @@
 // Here we will learan to create a Promise
 // it needs a 'new' keywords
-// and then 'promise' and parenthesis '()'within it it uses callback function
+// and then 'promise' and parenthesis '()'within it. It uses callback function
 // whicch have a parameeters -> 'resolve and reject'
 // this is a creation stage of promise.
 const PromiseOne = new Promise(function (resolve, reject) {
@@ -46,7 +46,7 @@ const PromiseThree = new Promise(function (resolve, reject) {
         resolve({name:'Umair Saifi',email:'UmairSaifi122@gmail.com'})
     }, 3000);
 });
-// now we consume the promise whic we create and got the data from the promise
+// now we consume the promise in which we create and got the data from the promise
 PromiseThree.then(function(user){
     console.log(user);
 })
@@ -129,7 +129,8 @@ consumPromiseFive();
 
 // --------------------------------------------------------------------------------------------------------------
 
-// Some Advanced Functions things
+// Some Advanced Functions that we will going to Learn.
+// So, We will Continue our Learnings.
 
 // Some asic way to perform the task
 // we are using fetch() and get response in order to access the data
@@ -143,17 +144,17 @@ async function getAllUsers() {
     console.log(data);
 }
 
-// getAllUsers();
+getAllUsers();
 
 // now we are trying it with the try & catch statement
 
 async function getAllUsers1() {
     try {
         const response = await fetch('https://jsonplaceholder.typicode.com/users');
-        // here response receives the response in string format
+        // here response is received in the string format.
         // for this we will parse the response in json format
-        // here we the response takes time to convert into the json format so
-        // you have to put await before the parsing of te response
+        // here our response takes the time to convert it into the json format so
+        // you have to put await before the parsing of the response
         const data = await response.json();
         console.log(data);
     } catch (error) {
