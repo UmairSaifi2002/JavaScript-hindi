@@ -1,4 +1,4 @@
-// In JavaScript al things are related to the Object.
+// In JavaScript all things are related to the Object.
 // Array, String, is belongs to the object
 // it is called prototyple inheritance
 function multiplyBy5(num) {
