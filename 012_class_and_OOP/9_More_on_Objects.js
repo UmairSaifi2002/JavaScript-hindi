@@ -29,7 +29,7 @@ const chai = {
     price : 50,
     isAvailable : true,
     orderChai : function() {
-        ''
+        console.log('chai nhi bani...');
     }
 }
 //This object also have getOwnPropertyeiscriptor propert
@@ -51,9 +51,14 @@ Object.defineProperty(chai,'price',{
 }) // -> { value: 50, writable: false, enumerable: false, configurable: false }
 console.log(Object.getOwnPropertyDescriptor(chai,'price'));
 
-// agr enumerable true hogi to hi ye object iterable hoga
-for (let [key, value] of chai) {
+// Object hhamara iterateable nhi hota h
+// for (let [key, value] of chai) pr iski entries iterateable h
+// pr hame object ko is property k ander likhna padega Object.entries('object Name')
+for (let [key, value] of Object.entries(chai)) {
     if (typeof value !== 'function') {
         console.log(`${key}: ${value}`);
     }
 }
+// Note :- Agr m Object ki kisi bhi ek property k 'enumerable property ko false' kr du
+// to vo iteration m part hi nhi legi
+// infact us pr iteration hi nhi hogi aur vo show bhi nhi hogi output m

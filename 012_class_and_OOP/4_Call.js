@@ -14,7 +14,7 @@ function CreateUser (username,email,password) {
     // kyuki ye 'this' ham is function k us dusre function m use kr sake
     // aur jab vo function complete ho kr disappear hoga execution context se to jo value 
     // pehle disappear function ho rhi thi vo ab nhi ho paygi kyuki vo value hamne store krli
-    // dusre function k 'this' m
+    // iss function k 'this' m
     
     // Samajh ayaa...
     SetUser(this,username);
