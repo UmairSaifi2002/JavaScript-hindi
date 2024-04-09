@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lexical Scoping & Closure</title>
+</head>
+
+<body style="background-color: #313131;">
+    <button id="blue">Blue</button>
+    <button id="green">Green</button>
+</body>
+<script>
+    // This is Lexical Scoping
+    /*
+    In lexical scoping:
+
+    Scope Creation: Scope is created when a function is defined, not when it is executed. 
+    Every time you define a function, a new scope is created.
+
+    Access to Variables: Functions in JavaScript have access to variables defined in their outer scope (enclosing scope). 
+    This means that inner functions can access variables from their parent functions, but not vice versa.
+    */
+    function outerFunction() {
+        let outerVariable = 'I am outer';
+
+        function innerFunction() {
+            console.log(outerVariable); // Inner function has access to outerVariable
+        }
+
+        innerFunction();
+    }
+
+    outerFunction(); // Output: I am outer
+
+    // Closure
+    function outerFunction() {
+        let outerVariable = 'I am outer';
+
+        function innerFunction() {
+            console.log(outerVariable); // Inner function has access to outerVariable
+        }
+        // 
+        return innerFunction;
+    }
+
+    // ye variable store kr rha h jo bhi ye outerfunction return kr rha h
+    // to jab outerFunction run ho jayga to uska execution context khatam ho jayga
+    // pr ruko 
+    // ye outerFunction return kr rha h innerFunction ko
+    // to innnerFunction to return hoga hi pr uske parent k scope bhi sath m return hoga
+    // means innerFuction k parent to outerFunction h to uski memory bhi sath m return hogi
+    const closure = outerFunction();
+    closure(); // Output: I am outer
+
+    // One Practical example of Closure
+    function ClickHandler(color){
+        return function(){
+            document.body.style.backgroundColor = `${color}`;
+        }
+    }
+    document.getElementById('blue').onclick = ClickHandler('blue');
+    document.getElementById('green').onclick = ClickHandler('green');
+    // function clickHandler(color){
+    //         // document.body.style.backgroundColor = `${color}`
+
+    //         return function(){
+    //             document.body.style.backgroundColor = `${color}`
+    //         }
+    //     }
+
+    // document.getElementById('blue').onclick = clickHandler("blue")
+    // document.getElementById('green').onclick = clickHandler("green")
+
+</script>
+
+</html>
