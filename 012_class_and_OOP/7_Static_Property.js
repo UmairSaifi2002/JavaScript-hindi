@@ -11,7 +11,7 @@ class User {
         return `123456`;
     }
     // using static kyword for defining the function
-    // if any object or the child object will be not able to access this function
+    // Any object or the child object will be not able to access this function
     static ShowPassword() {
         return `Password: qwerty`;
     }

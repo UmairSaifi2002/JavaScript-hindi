@@ -15,6 +15,7 @@
             this.server = 'https://localhost:3000';
 
             // requirement
+            // so use bind here in the function that we declare or have a reference.
             document.querySelector('button').addEventListener('click',this.handleClick.bind(this),false);
         }
         handleClick () {

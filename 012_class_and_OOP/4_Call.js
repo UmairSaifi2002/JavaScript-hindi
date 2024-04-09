@@ -4,7 +4,7 @@ function SetUser (username) {
 
 function CreateUser (username,email,password) {
     // yaha pr ham username ek dusre function m set karana chah rhe h pr vo hoga hi nhi
-    // kyuki jese hi vo dusra function call hoga to uske execution context k bad uki sari values disappear ho jayengi
+    // kyuki jese hi vo dusra function call hoga to uske execution context k bad uski sari values disappear ho jayengi
     // isse ki hamra y print nhi ho payga 
     // is code ki vajha se -> SetUser(username);
     // to ab hame 'call' use karengy with 'this'

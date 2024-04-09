@@ -9,7 +9,8 @@ class User {
 
 class Teacher extends User {
     constructor(username, email, password) {
-        super(username, email, password);
+        // super(username, email, password);
+        super(username)
         this.email = email;
         this.password = password;
     }
