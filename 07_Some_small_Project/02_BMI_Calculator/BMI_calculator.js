@@ -1,7 +1,7 @@
 // First we have to select form
 const form = document.querySelector('form');
 // if we select the input field before the eventlister then whenever the eventlistner is called or button is clicked
-// then page will be reload and with this the valus withih the input field is null
+// then page will be reload and with this the valus within the input field will become null
 
 form.addEventListener('submit',function (e){
     e.preventDefault();

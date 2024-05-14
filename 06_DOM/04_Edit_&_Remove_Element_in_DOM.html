@@ -7,7 +7,7 @@
     <style>
         body{
             background-color: black;
-            color: greenyellow;
+            color: rgb(152, 253, 0);
         }
     </style>
 </head>
@@ -52,7 +52,7 @@
         // method 1 -> by changing innerHTML
         // secondLang.innerHTML = "Mojo"
 
-        //method 2 -> by creatin a new element and replace it by existing one
+        // method 2 -> by creating a new element and replace it by existing one
         const newli = document.createElement('li');
         newli.textContent = "Mojo";
         secondLang.replaceWith(newli);
@@ -60,6 +60,7 @@
         // method 3 -> by using '.OuterHTML' mehod
         const firstLang = document.querySelector('li:first-child');
         firstLang.outerHTML = '<li> TypeScript</li>';
+
 
         // Removing an Element
         const lastLang = document.querySelector('li:last-child');

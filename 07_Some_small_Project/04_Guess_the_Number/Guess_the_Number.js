@@ -1,6 +1,7 @@
-
+// Generating a Random Number
 let randomNumber = parseInt(Math.random() * 100 + 1);
 
+// Selecting every element using its class & id 
 const submit = document.querySelector('#subt');
 const userInput = document.querySelector('#guessField');
 const guessSlot = document.querySelector('.guesses');
@@ -8,8 +9,10 @@ const remaining = document.querySelector('.lastResult');
 const lowOrHi = document.querySelector('.lowOrHi');
 const startOver = document.querySelector('.resultParas');
 
+// now we are creating a new paragraph text element
 const p = document.createElement('p');
 
+// setting some new values to game properties
 let prevGuess = [];
 let numGuess = 1;
 
@@ -80,13 +83,14 @@ function newGame() {
   const newGameButton = document.querySelector('#newGame');
   newGameButton.addEventListener('click', function (e) {
     randomNumber = parseInt(Math.random() * 100 + 1);
+
+    // reseting the values
     prevGuess = [];
     numGuess = 1;
     guessSlot.innerHTML = '';
     remaining.innerHTML = `${11 - numGuess} `;
     userInput.removeAttribute('disabled');
     startOver.removeChild(p);
-
     playGame = true;
   });
 }
