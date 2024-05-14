@@ -119,5 +119,6 @@ const shoppingCart = [
 ]
 
 const priceToPay = shoppingCart.reduce((acc, item) => acc + item.price, 0)
+// 0 is the initial value for the accumulator. It's the value that acc takes in the first iteration of the reducer function.
 
 console.log(priceToPay);

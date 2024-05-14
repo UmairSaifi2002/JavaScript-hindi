@@ -39,7 +39,7 @@ const obj4 = {7:"g",8:"h"}
 const finalObject0 = Object.assign({},obj1,obj2,obj3,obj4)
 console.log(finalObject0) // -> {1:'a',2:'b',3:'c',4:'d',5:'e',6:'f',7:'g',8:'h'}
 
-// The another usefull solution to combine tw or more than objects
+// The another usefull solution to combine tw0 or more than objects
 // to use the spread operator in object 
 // {...Objectname,...Objectname, and so on}
 const finalObject = {...obj1,...obj2,...obj3,...obj4}
@@ -62,8 +62,8 @@ console.log(users[1].email) // -> b@example.com
 // for keys -> Object.keys(object_name)
 // for values -> Object.values(object_name)
 // the most important thing is it return array as an output
-console.log(Object.keys(tinderUser)) // -> [ 'id', 'name', 'IsLoggedin' ]
-console.log(Object.values(tinderUser)) // -> [ '123abc', 'sam', false ]
+console.log(Object.keys(tinderUser)) // -> [ 'id', 'name', 'IsLoggedin' ] // type -> array
+console.log(Object.values(tinderUser)) // -> [ '123abc', 'sam', false ] // type -> array
 
 // now if we want keys along with its value then we use '.entries()' function
 // Let's see how can we use it

@@ -10,7 +10,7 @@ const DC_heroes = ["Superman","Batman","flash"]
 const All_Heros = Marvel_heros.concat(DC_heroes) // -> here two arrays are combined and return the new updated array
 // console.log(All_Heros) // -> [ 'Ironman', 'Spiderman', 'Thor', 'Superman', 'Batman', 'flash' ]
 
-// spred operator for this just put three dots before the name of the array
+// spread operator for this just put three dots before the name of the array
 // ...ArrayName
 const All_New_Heros = [...Marvel_heros,...DC_heroes]
 // console.log(All_New_Heros) // -> [ 'Ironman', 'Spiderman', 'Thor', 'Superman', 'Batman', 'flash' ]

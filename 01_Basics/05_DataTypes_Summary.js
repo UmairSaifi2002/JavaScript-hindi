@@ -40,7 +40,7 @@ const myFunction = function(){
     console.log("Hello world!")
 }
 
-// Now we can Dtermine the DataType by using the name of the DataType
+// Now we can Determine the DataType by using the name of the DataType
 console.log(typeof score) // -> number
 console.log(typeof scoreValue) // -> number
 console.log(typeof isLoggedIn) // -> boolean

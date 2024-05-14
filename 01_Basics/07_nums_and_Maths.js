@@ -38,5 +38,5 @@ console.log(Math.random()) // -> it gives the random number between 0 and 1
 // so if min_val = 1 and max_val = 10
 // formula for random number between min_val and max_val
 // we can use both Math.floor() & Math.ceil() 
-//-> console.log(min_val + Math.floor(Math.rsndom()*(max_val - min_val + 1)))
+//-> console.log(min_val + Math.floor(Math.random()*(max_val - min_val + 1)))
 console.log(Math.ceil(1+(Math.random()*(10-1+1)))) // -> it return the value between 1 and 10

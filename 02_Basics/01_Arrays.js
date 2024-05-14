@@ -12,8 +12,8 @@ console.log(myArray[2]) // -> 2
 // object from which the copy is made.
 // agr koi bhi change hoga hamara shallow copies m to vo changes original/ source m bhi hoga.
 
-//deep copies means A copy of an object is a copy whose properties do not share the same references
-// original/source m kuch bhi change nhi hoga agr copies m kuch change hoga to
+// deep copies means A copy of an object is a copy whose properties do not share the same references
+// original/source m kuch bhi change nhi hoga agr deep copies m kuch change hoga to
 
 const myArray2 = new Array(1,2,3,4,5)
 console.log(myArray2) // -> [1,2,3,4,5]

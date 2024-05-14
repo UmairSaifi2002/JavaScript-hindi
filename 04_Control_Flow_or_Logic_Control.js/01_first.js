@@ -23,12 +23,12 @@
 // const score = 200
 // if(score >100){
 //     // here we use "let" to declare the variable
-//     // if we call this variable outside its scope then the compiler thows the error message
+//     // if we call this variable outside its scope then the compiler throws the error message
 //     let power = 'fly'
 
 //     // there is a twist
 //     // if we declare the variable using "var"
-//     // and call outside its scope then the compiler donot thows the error message
+//     // and call outside its scope then the compiler donot throws the error message
 //     // because "var" keyword is accessible outside the scope means it is globally accessible
 //     // var power = 'fly'
 //     console.log(`User power is ${power}`)

@@ -12,7 +12,7 @@ let state
 // String => ""
 // boolean => true/false
 // null => standalone value
-// undefined => 
+// undefined => which is not defined
 // symbol => unique
 
 

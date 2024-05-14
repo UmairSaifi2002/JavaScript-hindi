@@ -28,7 +28,7 @@ console.log(newString1) // -> a
 const newString2 = "   NewGame is Contra               "
 console.log(newString2) // ->    NewGame is Contra               
 console.log(newString2.trim()) // trim function removes the spaces // -> NewGame is Contra
-// trim() removes the starting and te last spces from the string
+// trim() removes the starting and the last spaces from the string
 
 const url = "http://localhost/Chair%20Aur%20Code.com"
 console.log(url.replace('%20',' ')) // -> https://localhost/chair Aur%20Code.com
