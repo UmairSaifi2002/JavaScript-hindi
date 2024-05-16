@@ -10,13 +10,13 @@ let heroPower = {
     SpiderMan : 'WebShooter and Sling',
     IronMan : 'Tech, Suit, ideas',
     getThorPowers : function() {
-        console.log(`Thor Pwers is ${this.thor}`);
+        console.log(`Thor Powers is ${this.thor}`);
     },
     getSpiderManPowers : function() {
-        console.log(`Thor Pwers is ${this.SpiderMan}`);
+        console.log(`Thor Powers is ${this.SpiderMan}`);
     },
     getIronManPowers : function() {
-        console.log(`Thor Pwers is ${this.IronMan}`);
+        console.log(`Thor Powers is ${this.IronMan}`);
     }
 };
 
@@ -25,7 +25,7 @@ Object.prototype.umair = function() {
     console.log('Umair is Present EveryWhere.');
 }
 
-// as above we will doine this with Array
+// as above we will done this with Array
 Array.prototype.hiUmair = function () {
     console.log('HiUmair is Present EveryWhere.');
 }

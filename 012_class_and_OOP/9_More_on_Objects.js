@@ -32,7 +32,7 @@ const chai = {
         console.log('chai nhi bani...');
     }
 }
-//This object also have getOwnPropertyeiscriptor propert
+//This object also have getOwnPropertydeiscriptor property
 console.log(Object.getOwnPropertyDescriptor(chai,'name'));
 /*
 {
