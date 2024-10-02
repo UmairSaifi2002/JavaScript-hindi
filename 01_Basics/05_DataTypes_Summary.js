@@ -60,8 +60,12 @@ console.log(typeof myFunction) // -> function
 // 2, Heap Memory. (Non-Premitive type) -> call by reference means it gives the reference when we want to fetch it and if we makes change in file then it will reflect to the original 
 
 let myYoutubeName = "Code == Solution"
+console.log(myYoutubeName); // -> "Code == Solution"
 let anotherName = myYoutubeName
+console.log(anotherName); // -> "Code == Solution"
 anotherName = "Code is Solution"
+console.log(myYoutubeName); // -> "Code == Solution"
+console.log(anotherName); // -> "Code is Solution"
 
 let userOne = {
     email:"user@google.com",

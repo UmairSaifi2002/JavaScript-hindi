@@ -4,19 +4,19 @@ let score = false
 console.log(typeof(score)) // -> boolean
 console.log(typeof score) // -> boolean
 
-let valueInNumber = Number(score)
+let valueInNumber = Number(score) // Conversion boolean to number
 console.log(typeof valueInNumber) // -> number
 console.log(valueInNumber) // -> 0
 
 // "33" => 33
-// "33abc" => NaN
+// "33abc" => NaN (Not a Number)
 // undefined => NaN
 // true => 1
 // false => 0
 
 let isLoggedIn = 1
 
-let booleanLoggedIn = Boolean(isLoggedIn)
+let booleanLoggedIn = Boolean(isLoggedIn) // conversion from Number to Boolean
 console.log(typeof booleanLoggedIn); // -> boolean
 console.log(booleanLoggedIn) // -> true
 
@@ -27,7 +27,7 @@ console.log(booleanLoggedIn) // -> true
 
 let someNumber = 123
 
-let StringNumber = String(someNumber)
+let StringNumber = String(someNumber) // Conversion ?Number to string
 console.log(StringNumber) // -> 123
 console.log(typeof StringNumber) // -> string
 

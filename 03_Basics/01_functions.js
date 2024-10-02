@@ -3,9 +3,9 @@ function sayMyName(){
     console.log("Hello!, Umair...")
 }
 // Now we will call this function
-// here if we write the name of functin the it will a reference of the function
+// here if we write the name of functin then it will be a reference of the function
 // and after that we will 'apply () -> this means execute'
-sayMyName()
+sayMyName() // -> Hello!, Umair...
 
 function addTwoNumbers(Num1,Num2){
     // console.log(Num1+Num2)
@@ -13,7 +13,7 @@ function addTwoNumbers(Num1,Num2){
 }
 // console.log(addTwoNumbers(3,4))
 const result = addTwoNumbers(3,4)
-console.log("Result : ",result)
+console.log("Result : ",result) // -> Result : 7
 // if we donot use return in a function then the result undefined
 
 function LoginUserMessage(username = "Harry"){ // if nothing is passed to the string then we can set the default values to the parameters
