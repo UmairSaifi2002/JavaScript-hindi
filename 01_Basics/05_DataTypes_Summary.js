@@ -56,8 +56,8 @@ console.log(typeof myFunction) // -> function
 
 // ************************************************   MEMORY  ***********************************************************
 // There are two types of memory
-// 1, Stack Memory. (Premitive type)
-// 2, Heap Memory. (Non-Premitive type)
+// 1, Stack Memory. (Premitive type) -> call by value means it gives copy when we want to fetch it
+// 2, Heap Memory. (Non-Premitive type) -> call by reference means it gives the reference when we want to fetch it and if we makes change in file then it will reflect to the original 
 
 let myYoutubeName = "Code == Solution"
 let anotherName = myYoutubeName
