@@ -8,6 +8,7 @@ console.log(myDate.toISOString()) //-> 2024-02-19T19:40:16.292Z
 console.log(myDate.toJSON())// -> 2024-02-19T19:40:16.292Z
 console.log(myDate.toLocaleDateString()) // -> 2/20/2024
 console.log(myDate.toLocaleString()) // -> 2/20/2024, 1:10:16 AM
+console. log(typeof myDate) // -> object
 
 let myCreatedDate = new Date(2024,2,20)// Jab ham esse bas value likhty h to hamara month jan 0 se start hota h
 console.log(myCreatedDate) // -> 2024-03-19T18:30:00.000Z
