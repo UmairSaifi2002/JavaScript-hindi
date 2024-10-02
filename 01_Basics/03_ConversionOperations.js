@@ -10,6 +10,7 @@ console.log(valueInNumber) // -> 0
 
 // "33" => 33
 // "33abc" => NaN
+// undefined => NaN
 // true => 1
 // false => 0
 
