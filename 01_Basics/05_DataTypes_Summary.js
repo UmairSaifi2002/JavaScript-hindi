@@ -76,3 +76,7 @@ let userTwo = userOne
 userTwo.email = "UserTwo@google.com"
 console.log(userOne.email) // -> UserTwo@google.com
 console.log(userTwo.email) // -> UserTwo@google.com
+
+/*
+In JavaScript, when you assign an object to a variable, you're not creating a new copy of that object. Instead, you're creating a reference to the same object in memory. This means that both userOne and userTwo are pointing to the same object.
+*/
